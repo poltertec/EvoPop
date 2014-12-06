@@ -1,6 +1,9 @@
-iris
+EvoPop
 ====
 
-A simple, flat and bold Gtk theme.
+A simple, flat and bold Gtk theme inspired on Google material design.
+Iris Dark was used as base.
 
-This repo was made to host the dark version of the Iris theme. The repository for Iris Light is at github.com/xyl0n/iris-light
+ToDo
+====
+Add Extra color now only Cyan mode
