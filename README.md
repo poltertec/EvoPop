@@ -6,8 +6,11 @@ Iris Dark was used as base.
 
 ToDo
 ====
-- finnalize css transition from Iris
+- finnalize gtk+2 transition from Iris
+- finnalize gtk+3 transition from Iris ✓
+- finnalize metacity transition from Iris
 - Clean out unnecessary files
 - Redo images
+- Add Gtk3 window controls ✓
 - Add dark theme ✓
 - Categorized color support?
