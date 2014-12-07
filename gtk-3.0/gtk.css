@@ -1,10 +1,10 @@
 /* default color scheme */
-@define-color bg_color #fafafa;
-@define-color fg_color #555555;
+@define-color bg_color #fefefe;
+@define-color fg_color #616161;
 @define-color base_color #fefefe;
-@define-color text_color #333333;
+@define-color text_color #212121;
 @define-color selected_bg_color transparent;
-@define-color selected_fg_color #df253f;
+@define-color selected_fg_color #26c6da;
 @define-color tooltip_bg_color #fefefe;
 @define-color tooltip_fg_color #2d2d2d;
 
@@ -39,15 +39,15 @@
 
 /* widget colors */
 @define-color button_bg_color #464646;
-@define-color menubar_bg_color @theme_text_color;
+@define-color menubar_bg_color @theme_fg_color;
 @define-color menubar_fg_color @theme_bg_color;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_text_color;
-@define-color menu_bg_color shade(@theme_text_color, 0.87);
-@define-color menu_fg_color @theme_bg_color;
+@define-color menu_bg_color @theme_bg_color;
+@define-color menu_fg_color @theme_fg_color;
 @define-color panel_bg_color #222222;
 @define-color panel_fg_color #f2f2f2;
-@define-color menu_selected_fg_color shade(shade(mix(#ff0000, #df253f, 0.75), 1.35), 0.95);
+@define-color menu_selected_fg_color #00bcd4;
 
 /* osd */
 @define-color osd_base #fafafa;
