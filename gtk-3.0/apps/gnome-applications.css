@@ -76,6 +76,28 @@ PanelApplet .button:active:prelight {
 WnckPager, WnckTasklist {
     background-color: @panel_bg_color;
 }
+/**************
+ * calculator *
+ **************/
+MathWindow.background,
+MathWindow .button {
+    background-color: #00bcd4;
+}
+
+MathWindow .titlebar,
+MathWindow .titlebar .button,
+MathWindow .titlebar .button:prelight,
+MathWindow .titlebar .button:selected,
+MathWindow .titlebar .button:active:hover,
+MathWindow .titlebar:backdrop,
+MathWindow .button:prelight {
+    background-color: #0097a7;
+    border-color: #0097a7;
+}
+
+MathWindow .titlebar .button:hover {
+    color:#000,
+}
 /************
  * nautilus *
  ************/
