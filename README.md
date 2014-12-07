@@ -9,4 +9,5 @@ ToDo
 - finnalize css transition from Iris
 - Clean out unnecessary files
 - Redo images
+- Add dark theme ✓
 - Categorized color support?
