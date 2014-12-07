@@ -6,7 +6,7 @@ Iris Dark was used as base.
 
 ToDo
 ====
+- finnalize css transition from Iris
 - Clean out unnecessary files
 - Redo images
-- finnalize cyan mode
-- Add Extra colors, for the moment only Cyan
+- Categorized color support?
