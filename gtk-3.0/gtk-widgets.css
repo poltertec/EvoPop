@@ -85,6 +85,15 @@ GtkClutterOffscreen {
     color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 
+GtkWindow .menubar {
+    background-color: #9e9e9e;
+}
+
+GtkWindow .menubar .menuitem:hover,
+GtkWindow .menubar .menuitem:active {
+    color: @theme_fg_color;
+}
+
 /* apply effects to insensitive and prelit images */
 *:insensitive {
     -gtk-image-effect: dim;
