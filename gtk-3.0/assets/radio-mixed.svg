@@ -10,7 +10,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    width="100%"
    height="100%"
    sodipodi:docname="radio-mixed.svg">
@@ -36,15 +36,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="840"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
      id="namedview12"
      showgrid="false"
      inkscape:zoom="38.142578"
-     inkscape:cx="3.7265605"
+     inkscape:cx="-1.1236623"
      inkscape:cy="8"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g4" />
   <g
@@ -65,7 +65,7 @@
        x="4"
        y="7"
        height="2"
-       style="fill:#df253f;fill-opacity:1"
+       style="fill:#00b0ff;fill-opacity:1"
        transform="translate(0 1036.3622)"
        id="rect10" />
   </g>
