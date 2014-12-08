@@ -6,9 +6,9 @@ Iris Dark was used as base.
 
 ToDo
 ====
-- finnalize gtk+2 transition from Iris
-- finnalize gtk+3 transition from Iris ✓
-- finnalize metacity transition from Iris
+- finalize gtk+2 transition from Iris
+- finalize gtk+3 transition from Iris ✓
+- finalize metacity transition from Iris
 - Clean out unnecessary files
 - Redo images
 - Add Gtk3 window controls ✓
