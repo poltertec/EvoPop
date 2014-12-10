@@ -1,0 +1,12 @@
+/**EvolveJournal**/
+
+EvolveJournalEvolveNotebook .button {
+	color: @theme_fg_color;
+	background-color: transparent;
+}
+
+EvolveJournalEvolveNotebook .button:hover {
+	color: @theme_selected_fg_color;
+	background-color: transparent;
+}
+
