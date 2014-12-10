@@ -81,7 +81,22 @@ WnckPager, WnckTasklist {
  **************/
 MathWindow.background,
 MathWindow .button {
-    background-color: #00bcd4;
+    background-color: #fefefe;
+    color: #f50057;
+}
+
+MathWindow .button {
+    font-size: 125%;
+}
+
+MathWindow .button:prelight {
+    background-color: #fefefe;
+    color: #ff4081;
+}
+
+MathWindow .button:active:hover{
+    background-color: #fefefe;
+    color: #ff80ab;
 }
 
 MathWindow .titlebar,
@@ -89,14 +104,13 @@ MathWindow .titlebar .button,
 MathWindow .titlebar .button:prelight,
 MathWindow .titlebar .button:selected,
 MathWindow .titlebar .button:active:hover,
-MathWindow .titlebar:backdrop,
-MathWindow .button:prelight {
+MathWindow .titlebar:backdrop {
     background-color: #0097a7;
     border-color: #0097a7;
 }
 
-MathWindow .titlebar .button:hover {
-    color:#000,
+MathWindow .titlebar .button:prelight{
+color: #b2ebf2;
 }
 /************
  * nautilus *
