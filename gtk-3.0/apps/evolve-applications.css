@@ -1,5 +1,6 @@
 /**EvolveJournal**/
 
+/*TODO: remove top border TextBox*/
 EvolveJournalEvolveWindow .titlebar,
 EvolveJournalEvolveWindow .titlebar:backdrop,
 EvolveJournalEvolveWindow .titlebar .button,
@@ -13,10 +14,12 @@ EvolveJournalEvolveWindow .titlebar .button:hover,
 EvolveJournalEvolveWindow .titlebar .button:active:hover {
 	color: #18ffff;
 }
+
 EvolveJournalEvolveNotebook.notebook.header {
 	background-color: #03a9f4;
 	border-color: #03a9f4;
 }
+
 EvolveJournalEvolveNotebook .button {
 	color: #01579b;
 	background-color: transparent;
@@ -27,28 +30,32 @@ EvolveJournalEvolveNotebook .button:active:hover {
 	color: #18ffff;
 	background-color: transparent;
 }
-/*Tabs & add button still need some, there seems to be problem with the program itself*/
+
 EvolveJournalEvolveNotebook.notebook tab,
 EvolveJournalEvolveNotebook.notebook tab:active,
 EvolveJournalEvolveNotebook.notebook tab:active:hover {
 	background-color: #FAE7B6;
 }
 
-EvolveJournalEvolveNotebook.notebook tab:active,
-EvolveJournalEvolveNotebook.notebook tab:active:hover {
+EvolveJournalEvolveNotebook.notebook tab.top:active,
+EvolveJournalEvolveNotebook.notebook tab.top:first-child:active,
+EvolveJournalEvolveNotebook.notebook tab.top:active:hover {
     	border-top: 4px solid #18ffff;
+	box-shadow: none;
 }
 
-EvolveJournalEvolveNotebook.notebook tab:prelight,
-EvolveJournalEvolveNotebook.notebook tab {
+EvolveJournalEvolveNotebook.notebook tab.top,
+EvolveJournalEvolveNotebook.notebook tab.top:first-child,
+EvolveJournalEvolveNotebook.notebook tab.top:hover {
     	border-top: 4px solid #03a9f4;
 }
-EvolveJournalEvolveNotebook.notebook tab .active-page GtkLabel,
+
+EvolveJournalEvolveNotebook.notebook .active-page GtkLabel,
 EvolveJournalEvolveNotebook.notebook .prelight-page GtkLabel {
 	color: #03a9f4;
 }
+
 EvolveJournalEvolveNotebook.notebook .active-page,
 EvolveJournalEvolveNotebook.notebook .prelight-page {
 	color: #99601F;
 }
-
