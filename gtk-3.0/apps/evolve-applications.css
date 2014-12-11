@@ -1,12 +1,54 @@
 /**EvolveJournal**/
 
-EvolveJournalEvolveNotebook .button {
-	color: @theme_fg_color;
-	background-color: transparent;
+EvolveJournalEvolveWindow .titlebar,
+EvolveJournalEvolveWindow .titlebar:backdrop,
+EvolveJournalEvolveWindow .titlebar .button,
+EvolveJournalEvolveWindow .titlebar .button:hover,
+EvolveJournalEvolveWindow .titlebar .button:active:hover {
+	background-color: #0288d1;
+	border-color: #0288d1;
 }
 
-EvolveJournalEvolveNotebook .button:hover {
-	color: @theme_selected_fg_color;
+EvolveJournalEvolveWindow .titlebar .button:hover,
+EvolveJournalEvolveWindow .titlebar .button:active:hover {
+	color: #18ffff;
+}
+EvolveJournalEvolveNotebook.notebook.header {
+	background-color: #03a9f4;
+	border-color: #03a9f4;
+}
+EvolveJournalEvolveNotebook .button {
+	color: @theme_bg_color;
+	background-color: #03a9f4;
+}
+
+EvolveJournalEvolveNotebook .button:hover,
+EvolveJournalEvolveNotebook .button:active:hover {
+	color: #18ffff;
 	background-color: transparent;
+}
+/*Tabs & add button still need some, there seems to be problem with the program itself*/
+EvolveJournalEvolveNotebook.notebook tab,
+EvolveJournalEvolveNotebook.notebook tab:active,
+EvolveJournalEvolveNotebook.notebook tab:active:hover {
+	background-color: #FAE7B6;
+}
+
+EvolveJournalEvolveNotebook.notebook tab:active,
+EvolveJournalEvolveNotebook.notebook tab:active:hover {
+    	border-top: 4px solid #18ffff;
+}
+
+EvolveJournalEvolveNotebook.notebook tab:prelight,
+EvolveJournalEvolveNotebook.notebook tab {
+    	border-top: 4px solid #03a9f4;
+}
+EvolveJournalEvolveNotebook.notebook tab .active-page GtkLabel,
+EvolveJournalEvolveNotebook.notebook .prelight-page GtkLabel {
+	color: #03a9f4;
+}
+EvolveJournalEvolveNotebook.notebook .active-page,
+EvolveJournalEvolveNotebook.notebook .prelight-page {
+	color: #99601F;
 }
 
