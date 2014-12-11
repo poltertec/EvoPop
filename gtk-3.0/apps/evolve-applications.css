@@ -18,8 +18,8 @@ EvolveJournalEvolveNotebook.notebook.header {
 	border-color: #03a9f4;
 }
 EvolveJournalEvolveNotebook .button {
-	color: @theme_bg_color;
-	background-color: #03a9f4;
+	color: #01579b;
+	background-color: transparent;
 }
 
 EvolveJournalEvolveNotebook .button:hover,
