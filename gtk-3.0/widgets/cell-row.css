@@ -1,24 +1,36 @@
-/************
- * Cell Row *
- ************/
-
 .cell {
-    color: @fg;
-    border-width: 0px;
+    border-width: 0;
+    border-radius: 0;
 }
 
 .cell:selected,
 .cell:selected:focus {
     background-color: @selected;
     color: @selected_fg;
+    background-image: none;
+    font-weight: bold;
+}
+
+.cell:selected.image:hover {
+    color: shade(@theme_selected_fg_color, 1.15);
+}
+
+GtkTreeView.cell.button {
+    color: @fg;
+}
+
+GtkTreeView.cell.button:hover {
+    color: @selected_fg;
 }
 
 .row:selected,
+.row:selected:hover,
 .row:selected:focus {
-    border: 0 solid shade(@selected, 0.9);
+    border: 0 none shade(@selected, 0.9);
     background-color: @selected;
     background-image: none;
     color: @selected_fg;
+    font-weight: bold;
 
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;

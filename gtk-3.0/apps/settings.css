@@ -65,27 +65,6 @@ CcWindow .search-bar .entry:focus {
 }
 
 /************
- * Iconview *
- ************/
- 
-CcWindow GtkIconView.view.cell {
-    border: none;
-}
- 
-CcWindow GtkIconView.view.cell:hover {
-    border: 1px solid @mid_teal;
-    color: white;
-    background-color: @mid_teal;
-}
- 
-CcWindow GtkIconView.view.cell:selected,
-CcWindow GtkIconView.view.cell:selected:focus {
-    border: 1px solid @mid_teal;
-    background-color: @mid_teal;
-}
-
-
-/************
  * Notebook *
  ************/
 
@@ -94,8 +73,9 @@ CcWindow .notebook tab {
     background-color: @mid_teal;
 }
 
+CcWindow .notebook.header.top,
 CcWindow .notebook tab.top {
-    border-color: @mid_teal;
+    border-color: @dark_teal;
 }
 
 CcWindow .notebook tab.top:active {
@@ -110,31 +90,6 @@ CcBackgroundChooserDialog .button:hover,
 CcWindow .button:hover {
     color: @select_teal;
 }
-
-/**********
- * Switch *
- **********/
-
-CcWindow GtkSwitch.trough:active {
-    background-image: url("assets/switch-on-teal.svg");
-    background-color: transparent;
-}
-
-CcWindow GtkSwitch.slider:active {
-    background-image: url("assets/switch-slider-on-teal.svg");
-}
-
-/************
- * Checkbox *
- ************/
-CcWindow .check:active,
-CcWindow .check:checked,
-CcWindow .check row:selected:active,
-CcWindow .check row:selected:focus:active {
-    -gtk-icon-source: url("assets/checkbox-checked-teal.svg"); /*3.14*/
-    background-image: url("assets/checkbox-checked-teal.svg");
-}
-
 
 /*************
  * List Rows *

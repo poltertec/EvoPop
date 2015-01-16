@@ -42,7 +42,7 @@ GtkTreeView.view {
  ************/
 
 GtkIconView.view {
-    background-color: @bg;
+    background-color: @base;
     color: @fg;
 }
 

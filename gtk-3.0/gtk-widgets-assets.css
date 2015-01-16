@@ -19,9 +19,18 @@
     background-image: url("assets/checkbox-checked.svg");
 }
 
-/*************
- * GtkSwitch *
- *************/
+/*Gnome Control Center*/
+CcWindow .check:active,
+CcWindow .check:checked,
+CcWindow .check row:selected:active,
+CcWindow .check row:selected:focus:active {
+    -gtk-icon-source: url("assets/checkbox-checked-teal.svg"); /*3.14*/
+    background-image: url("assets/checkbox-checked-teal.svg");
+}
+
+/**********
+ * Switch *
+ **********/
 
 GtkSwitch.trough {
     background-image: url("assets/switch-off.svg");
@@ -50,4 +59,14 @@ GtkSwitch.slider {
 
 GtkSwitch.slider:active {
     background-image: url("assets/switch-slider-on.svg");
+}
+
+/*Gnome Control Center*/
+CcWindow GtkSwitch.trough:active {
+    background-image: url("assets/switch-on-teal.svg");
+    background-color: transparent;
+}
+
+CcWindow GtkSwitch.slider:active {
+    background-image: url("assets/switch-slider-on-teal.svg");
 }

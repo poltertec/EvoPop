@@ -21,18 +21,14 @@
     font: bold;
 }
 
-.titlebar .button,
-.titlebar .button.text-button,
-.titlebar .button.image-button {
+.titlebar .button {
     color: white;
     background-color: transparent;
     border-color: transparent;
 }
 
-.titlebar .button.text-button:hover,
-.titlebar .button.image-button:hover,
-.titlebar .button.text-button:active:hover,
-.titlebar .button.image-button:active:hover {
+.titlebar .button:hover,
+.titlebar .button:active:hover {
     background-color: transparent;
     color: @selected;
     box-shadow: none;

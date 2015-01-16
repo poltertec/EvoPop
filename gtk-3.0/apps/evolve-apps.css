@@ -6,6 +6,11 @@ EvolveJournalEvolveWindow .titlebar {
     background-color: @dark_blue;
 }
 
+EvolveJournalEvolveWindow .titlebar .button:hover,
+EvolveJournalEvolveWindow .titlebar .button:active:hover {
+    color: @select_blue;
+}
+
 EvolveJournalEvolveWindow .notebook.header,
 EvolveJournalEvolveWindow .notebook tab {
     background-color: @mid_blue;
@@ -18,4 +23,18 @@ EvolveJournalEvolveWindow .notebook tab.top {
 
 EvolveJournalEvolveWindow .notebook tab.top:active {
     border-bottom-color: @select_blue;
+}
+
+EvolveJournalEvolveNotebook tab GtkBox .button.image-button {
+    color: white;
+}
+
+EvolveJournalEvolveNotebook > GtkBox .button.image-button {
+    color: @dark_blue;
+    background-color: transparent;
+}
+
+EvolveJournalEvolveNotebook > GtkBox .button:hover {
+    color: @select_blue;
+    background-color: transparent;
 }

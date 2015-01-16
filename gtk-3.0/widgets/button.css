@@ -6,12 +6,8 @@
     padding: 4px 5px;
     background-image: none;
     background-color: @borders;
-    color: @text;
-    font: bold;
-}
-
-.button.image-button {
     color: @icons;
+    font: bold;
 }
 
 .button:hover {
