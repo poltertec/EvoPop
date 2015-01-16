@@ -1,0 +1,145 @@
+/**********
+ * Header *
+ **********/
+
+CcWindow .titlebar,
+CcBackgroundChooserDialog .titlebar,
+CcSharingPanelPrivate GtkDialog .titlebar {
+    background-color: @dark_teal;
+}
+
+CcBackgroundChooserDialog .titlebar .button.text-button {
+    color: white;
+}
+
+CcWindow .titlebar .button.image-button:hover,
+CcWindow .titlebar .button.text-button:hover,
+CcBackgroundChooserDialog .titlebar .button.text-button:hover,
+CcWindow .titlebar .button.image-button:active:hover,
+CcWindow .titlebar .button.text-button:active:hover,
+CcBackgroundChooserDialog .titlebar .button.text-button:active:hover {
+    background-color: transparent;
+    color: @select_teal;
+    box-shadow: none;
+}
+
+CcWindow {
+    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
+}
+
+CcWindow .cell:selected,
+CcWindow .cell:selected:focus {
+    background-color: @select_teal;
+}
+
+/*********
+ * Scale *
+ *********/
+
+CcWindow .scale.slider {
+    background-color: @select_teal;
+    border-color: @select_teal;
+}
+
+CcWindow .menuitem .scale.highlight.left,
+CcWindow .scale.highlight.left {
+    border-color: @select_teal;
+    background-color: @select_teal;
+}
+
+/***************
+ * Search bar *
+ ***************/
+
+CcWindow .search-bar {
+    background-color: @mid_teal;
+    color: @header_fg;
+}
+
+CcWindow .search-bar .entry {
+    border-color: @mid_teal;
+}
+
+CcWindow .search-bar .entry:focus {
+    border-color: @select_teal;
+}
+
+/************
+ * Iconview *
+ ************/
+ 
+CcWindow GtkIconView.view.cell {
+    border: none;
+}
+ 
+CcWindow GtkIconView.view.cell:hover {
+    border: 1px solid @mid_teal;
+    color: white;
+    background-color: @mid_teal;
+}
+ 
+CcWindow GtkIconView.view.cell:selected,
+CcWindow GtkIconView.view.cell:selected:focus {
+    border: 1px solid @mid_teal;
+    background-color: @mid_teal;
+}
+
+
+/************
+ * Notebook *
+ ************/
+
+CcWindow .notebook.header,
+CcWindow .notebook tab {
+    background-color: @mid_teal;
+}
+
+CcWindow .notebook tab.top {
+    border-color: @mid_teal;
+}
+
+CcWindow .notebook tab.top:active {
+    border-color: @select_teal;
+}
+
+/**********
+ * Button *
+ **********/
+
+CcBackgroundChooserDialog .button:hover,
+CcWindow .button:hover {
+    color: @select_teal;
+}
+
+/**********
+ * Switch *
+ **********/
+
+CcWindow GtkSwitch.trough:active {
+    background-image: url("assets/switch-on-teal.svg");
+    background-color: transparent;
+}
+
+CcWindow GtkSwitch.slider:active {
+    background-image: url("assets/switch-slider-on-teal.svg");
+}
+
+/************
+ * Checkbox *
+ ************/
+CcWindow .check:active,
+CcWindow .check:checked,
+CcWindow .check row:selected:active,
+CcWindow .check row:selected:focus:active {
+    -gtk-icon-source: url("assets/checkbox-checked-teal.svg"); /*3.14*/
+    background-image: url("assets/checkbox-checked-teal.svg");
+}
+
+
+/*************
+ * List Rows *
+ *************/
+
+CcWindow .list-row {
+    background-color: @base;
+}

@@ -1,0 +1,56 @@
+/********
+ * View *
+ ********/
+
+.view {
+    background-color: @base;
+    color: @text;
+    border:none;
+}
+
+.view.separator {
+    color: @borders;
+}
+
+/************
+ * TextView *
+ ************/
+
+GtkTextView:insensitive {
+    background-color: @base;
+    color: @text_insensitive;
+}
+
+/************
+ * Treeview *
+ ************/
+
+GtkTreeView.view.separator,
+GtkTreeView.separator,
+.separator,
+.separator:hover {
+    color: @borders;
+    background-color: @borders;
+}
+
+GtkTreeView.view {
+    background-color: @base;
+}
+
+/************
+ * Iconview *
+ ************/
+
+GtkIconView.view {
+    background-color: @bg;
+    color: @fg;
+}
+
+/****************
+ * Content View *
+ ****************/
+.content-view.view {
+    background-color: @bg;
+    color: @fg;
+}
+

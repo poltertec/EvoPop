@@ -1,0 +1,22 @@
+/**************
+ * tweak-tool *
+ **************/
+
+/*not working
+.tweak {
+    color: @text;
+}
+
+.tweak-categories {
+    background-color: @primary;
+}
+
+.list-row .tweak:hover {
+    background-color: @selected;
+}
+
+.list-row .tweak:hover GtkLabel {
+    color: @selected_fg;
+}
+*/
+

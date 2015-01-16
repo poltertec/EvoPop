@@ -1,0 +1,22 @@
+/***********
+ * Dialogs *
+ ***********/
+
+GtkDialog .titlebar,
+GtkDialog .titlebar:insensitive {
+    background-color: @bg;
+}
+
+GtkDialog .titlebar {
+    background-color: @bg;
+}
+
+GtkDialog .header-bar .title {
+    color: @text;
+}
+
+GtkDialog .titlebar .button,
+GtkDialog .titlebar .button.text-button,
+GtkDialog .titlebar .button.image-button {
+    color: @icons;
+}

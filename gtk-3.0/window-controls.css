@@ -1,46 +1,22 @@
 /* minimize */
-.titlebar .left .titlebutton:nth-child(3),
-.titlebar .right .titlebutton:nth-child(2) {
-	color: #fff;
-}
-
 .titlebar .left .titlebutton:nth-child(3):hover,
-.titlebar .right .titlebutton:nth-child(2):hover {
-	color: #fff9c4;
-}
-
+.titlebar .right .titlebutton:nth-child(2):hover,
 .titlebar .left .titlebutton:nth-child(3):active,
 .titlebar .right .titlebutton:nth-child(2):active {
 	color: #ffeb3b;
 }
 
 /* maximize */
-.titlebar .left .titlebutton:nth-child(2),
-.titlebar .right .titlebutton:nth-child(3) {
-	color: #fff;
-}
-
 .titlebar .left .titlebutton:nth-child(2):hover,
-.titlebar .right .titlebutton:nth-child(3):hover {
- 	color: #dcedc8;
-}
-
+.titlebar .right .titlebutton:nth-child(3):hover,
 .titlebar .left .titlebutton:nth-child(2):active,
 .titlebar .right .titlebutton:nth-child(3):active {
 	color: #8bc34a;
 }
 
 /* close */
-.titlebar .left .titlebutton:first-child,
-.titlebar .right .titlebutton:last-child {
-	color: #fff;
-}
-
 .titlebar .left .titlebutton:first-child:hover,
-.titlebar .right .titlebutton:last-child:hover {
-	color: #f9bdbb;
-}
-
+.titlebar .right .titlebutton:last-child:hover,
 .titlebar .left .titlebutton:first-child:active,
 .titlebar .right .titlebutton:last-child:active {
 	color: #e51c23;

@@ -1,0 +1,27 @@
+/***************
+ * Search bar *
+ ***************/
+
+.search-bar.toolbar,
+.search-bar {
+    padding: 2px;
+    padding-top: 5px;
+    background-color: @primary;
+    color: @header_fg;
+}
+
+/***********
+ * Buttons *
+ ***********/
+
+.search-bar.toolbar .button {
+    border: none;
+    background: none;
+    color: @header_fg;
+}
+
+.search-bar.toolbar .button:hover,
+.search-bar.toolbar .button:active:hover {
+    color: @selected;
+}
+

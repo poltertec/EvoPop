@@ -1,6 +1,7 @@
 /*************************
  * progressbar and scale *
  *************************/
+
 GtkScale,
 GtkProgressBar {
     padding: 0;
@@ -15,14 +16,12 @@ GtkProgressBar {
 .progressbar row:selected,
 .progressbar row:selected:focus {
     border-width: 0px;
-    border-style: solid;
-    border-color: shade(@theme_base_color, 0.9);
-    background-color: shade(@theme_selected_fg_color, 1.15);
+    background-color: @selected;
     background-image: none;
 }
 
 .progressbar.vertical {
-    background-color: @theme_selected_fg_color;
+    background-color: @selected;
     background-image: none;
 }
 
@@ -33,13 +32,13 @@ GtkProgressBar {
 .trough row:selected:focus {
     border-width: 3px;
     border-style: solid;
-    border-color: shade(@theme_base_color, 0.9);
-    background-color: shade(@theme_base_color, 0.9);
+    border-color: @base;
+    background-color: @base;
     background-image: none;
 }
 
 .trough.vertical {
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: @bg;
     background-image: none;
 }
 
@@ -62,8 +61,8 @@ GtkLevelBar.vertical {
 .level-bar.fill-block {
     border-width: 0px;
     border-style: solid;
-    border-color: shade(@theme_selected_fg_color, 0.9);
-    background-color: @theme_selected_fg_color;
+    border-color: @selected;
+    background-color: @selected;
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -78,10 +77,6 @@ GtkLevelBar.vertical {
 .level-bar.indicator-discrete.fill-block.vertical {
     margin: 1px 0;
 }
-
-/* discrete indicator border rounding,
-   uncomment when :nth-child will be working
-   on the widget
 
 .level-bar.indicator-discrete.fill-block.horizontal:first-child {
     border-radius: 0px 0 0 0px;
@@ -98,7 +93,7 @@ GtkLevelBar.vertical {
 .level-bar.indicator-discrete.fill-block.vertical:last-child {
     border-radius: 0 0 0px 0px;
 }
-*/
+
 
 .level-bar.fill-block.level-high {
     border-color: shade(@success_color, 0.85);
@@ -124,90 +119,69 @@ GtkLevelBar.vertical {
     background-image: none;
 }
 
-GtkScale {
-    -GtkRange-slider-width: 12;
+
+.scale {
+    -GtkRange-slider-width: 15;
     -GtkRange-trough-border: 1;
-    -GtkScale-slider-length: 12;
+    -GtkScale-slider-length: 15;
+
+    padding: 0;
+    outline-offset: -1px;
 }
 
-GtkScale.vertical {
-    -GtkScale-slider-length: 12;
-}
-
-GtkScale.slider {    
-
-    border-radius: 15px; /*Slider handle*/
-    background-color: shade(@theme_selected_fg_color, 1.0);
+.scale.slider {
+    border-radius: 8px;
+    background-color: @selected;
+    border-color: @selected;
     background-image: none;
 }
 
-GtkScale.slider:hover {
-    background-color: shade(@theme_selected_fg_color, 1.09);
+.scale.slider.fine-tune:active,
+.scale.slider.fine-tune:active:hover,
+.scale.slider.fine-tune.horizontal:active,
+.scale.slider.fine-tune.horizontal:active:hover {
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
-GtkScale.slider:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
+.scale.mark {
+    border-color: shade(@bg, 0.8);
+}
+
+.scale.trough {
+    margin: 7px 0;
+    border-color: shade(@bg, 0.8);
+    border-radius: 2px;
+    background-color: shade(@bg, 1.08);
     background-image: none;
 }
 
-GtkScale.slider.vertical {
-    background-color: shade(@theme_selected_fg_color, 1.0);
-    background-image: none;
+.scale.trough.vertical {
+    margin: 0 7px;
 }
 
-GtkScale.slider.vertical:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-GtkScale.mark {
-    border-color: shade(@theme_bg_color, 0.8);
-}
-
-GtkScale.trough {
-    margin: 6px 0;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
-}
-
-GtkScale.trough.vertical {
-    margin: 0 6px;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
-}
-
-.menubar .menuitem .scale.highlight.left,
+.menuitem .scale.highlight.left,
 .scale.highlight.left {
-    border-color: @theme_selected_fg_color;
-    background-color: @theme_selected_fg_color;
+    border-color: @selected;
+    background-color: @selected;
     background-image: none;
-}   
+}
 
-.menubar .menuitem .scale.highlight.left:hover {
-    border-color: shade(@theme_selected_fg_color, 0.8);
-    background-color: shade(@theme_selected_fg_color, 0.8);
+.menuitem .scale.highlight.left:hover {
+    border-color: shade(@selected, 0.8);
+    background-color: shade(@selected, 0.8);
 }
 
 .scale.highlight.bottom {
-    border-color: @theme_selected_fg_color;
-    background-color: @theme_selected_fg_color;
+    border-color: @selected;
+    background-color: @selected;
     background-image: none;
 }
 
-GtkScale.trough:insensitive,
+.scale.trough:insensitive,
 .scale.highlight.left:insensitive {
-    border-color: shade(@theme_bg_color, 0.9);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-GtkScale.trough.vertical:insensitive,
-.scale.highlight.bottom:insensitive {
-    border-color: shade(@theme_bg_color, 0.9);
-    background-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@bg, 0.85);
+    background-color: shade(@bg, 0.9);
     background-image: none;
 }

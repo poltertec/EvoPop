@@ -1,28 +1,51 @@
-/***********
- * sidebar *
- ***********/
+/**********
+* Sidebar *
+***********/
+
 .sidebar,
-.sidebar.view,
-.sidebar .view {
-    background-color: shade(@theme_bg_color, 0.98);
+.sidebar .view,
+.sidebar GtkScrolledWindow,
+.source-list,
+.source-list.view {
+    background-color: @primary;
     font-weight: bold;
-    color: @theme_fg_color;
+    color: @header_fg;
 }
 
-.sidebar .image:selected {
-    color: @theme_fg_color;
+.sidebar {
+    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
+    padding-top: 6px;
+    border-width: 0;
+}
+
+.sidebar .cell {
+    color: @header_fg;
 }
 
 .sidebar .image:selected:focus,
 .sidebar .image:selected:hover {
-    color: @theme_selected_fg_color;
+    background-color: @selected;
+    color: @selected_fg;
 }
 
 .sidebar .cell:selected,
 .sidebar .cell:selected:focus {
-    color: @theme_selected_fg_color;
+    background-color: @selected;
+    color: @selected_fg;
 }
 
-.sidebar .frame {
-    border-width: 0;
+.sidebar .list-row {
+    background-color: @primary;
+    color: @header_fg;
+}
+
+.sidebar .list-row:hover,
+.sidebar .list-row:focus {
+    background-color: @selected;
+    color: @selected_fg;
+}
+
+.sidebar .list-row GtkLabel,
+.sidebar .list-row GtkImage {
+    color: @header_fg;
 }

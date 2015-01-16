@@ -1,0 +1,26 @@
+/***********
+ * Desktop *
+ ***********/
+
+NautilusWindow > GtkGrid  {
+    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
+    background-color: @base;
+}
+
+NautilusQueryEditor .toolbar {
+    padding: 2px;
+    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
+    background-color: @primary;    
+    border-color: @primary;
+    color: @header_fg;
+   
+}
+
+NautilusQueryEditor .toolbar .button {
+    color: @header_fg;
+}
+
+NautilusWindow .pane-separator {
+    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
+    background-color: @primary;
+}

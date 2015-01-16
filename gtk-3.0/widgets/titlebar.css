@@ -1,0 +1,39 @@
+/************
+ * Titlebar *
+ ************/
+
+.titlebar,
+.titlebar:insensitive {
+    border-radius: 0;
+    padding: 8px 8px;
+    background-image: none;
+    background-color: @header;
+    color: @header_fg;
+    text-shadow: none;
+}
+
+.titlebar.default-decoration {
+    border: none;
+    box-shadow: none;
+}
+
+.titlebar .title {
+    font: bold;
+}
+
+.titlebar .button,
+.titlebar .button.text-button,
+.titlebar .button.image-button {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.titlebar .button.text-button:hover,
+.titlebar .button.image-button:hover,
+.titlebar .button.text-button:active:hover,
+.titlebar .button.image-button:active:hover {
+    background-color: transparent;
+    color: @selected;
+    box-shadow: none;
+}
