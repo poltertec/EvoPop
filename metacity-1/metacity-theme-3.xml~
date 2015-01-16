@@ -174,8 +174,8 @@
 
 <draw_ops name="titlebar_fill_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="blend/#212121/gtk:bg[NORMAL]/0.0" />
-		<color value="blend/#212121/gtk:bg[NORMAL]/0.0" />
+		<color value="blend/#424242/gtk:bg[NORMAL]/0.0" />
+		<color value="blend/#424242/gtk:bg[NORMAL]/0.0" />
 	</gradient>
 </draw_ops>
 
