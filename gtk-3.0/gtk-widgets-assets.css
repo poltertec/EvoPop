@@ -11,32 +11,56 @@
 }
 
 GtkCheckButton:hover,
-GtkCheckButton:active:hover,
+GtkCheckButton:checked:hover,
 GtkCheckButton:selected,
 GtkCheckButton:selected:focus {
     background-color: transparent;
 }
 
-.check,
-.check row:selected,
-.check row:selected:focus {
-    background-image: url("assets/checkbox-unchecked.svg");
+.check {
+    -gtk-icon-source: url("assets/checkbox-unchecked.svg");
 }
 
-.check:active,
-.check:hover:active,
-.check row:selected:active,
-.check row:selected:focus:active {
-    background-image: url("assets/checkbox-checked.svg");
+.check:insensitive {
+    -gtk-icon-source: url("assets/checkbox-unchecked-insensitive.svg");
+}
+
+.check:checked {
+    -gtk-icon-source: url("assets/checkbox-checked.svg");
+}
+
+.check:checked:insensitive {
+    -gtk-icon-source: url("assets/checkbox-checked-insensitive.svg");
 }
 
 /*Teal checkboxes*/
-CcWindow .check:active,
-CcWindow .check:checked,
-CcWindow .check row:selected:active,
-CcWindow .check row:selected:focus:active {
-    -gtk-icon-source: url("assets/checkbox-checked-teal.svg"); /*3.14*/
-    background-image: url("assets/checkbox-checked-teal.svg");
+CcWindow .check:checked {
+    -gtk-icon-source: url("assets/checkbox-checked-teal.svg");
+}
+
+/*********
+ * Radio *
+ *********/
+
+.radio {
+    -gtk-icon-source: url("assets/radio-unselected.svg");
+}
+
+.radio:insensitive {
+    -gtk-icon-source: url("assets/radio-unselected-insensitive.svg");
+}
+
+.radio:checked {
+    -gtk-icon-source: url("assets/radio-selected.svg");
+}
+
+.radio:active:insensitive {
+    -gtk-icon-source: url("assets/radio-selected-insensitive.svg");
+}
+
+/*Teal radio's*/ 
+CcWindow .radio:checked {
+    -gtk-icon-source: url("assets/radio-selected-teal.svg");
 }
 
 /**********
@@ -72,7 +96,7 @@ GtkSwitch.slider:active {
     background-image: url("assets/switch-slider-on.svg");
 }
 
-/*Gnome Control Center*/
+/*Teal Slider*/
 CcWindow GtkSwitch.trough:active {
     background-image: url("assets/switch-on-teal.svg");
     background-color: transparent;
