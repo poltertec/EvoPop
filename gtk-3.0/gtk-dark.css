@@ -2,23 +2,23 @@
  * Colors *
  **********/
 
-@define-color bg #212121;
+@define-color bg #424242;
 @define-color fg #fafafa;
-@define-color base #757575;
+@define-color base #616161;
 @define-color text alpha(#fff, 1.0);
 @define-color icons alpha(#fff, 1.0); /*icons & secondary text*/
 @define-color header #212121;
 @define-color header_fg #fff;
-@define-color primary #424242;
-@define-color selected #40c4ff;
+@define-color primary #212121;
+@define-color selected #03A9F4;
 @define-color selected_fg #fff;
-@define-color borders (#fff, 0.12); /*dividers & borders*/
+@define-color borders alpha(#fff, 0.12); /*dividers & borders*/
 
 /*insentive & backdrop*/
 
-@define-color text_insentive alpha(#000, 0.26);
-@define-color icons_insentive alpha(#000, 0.26);
-@define-color borders_insentive alpha(#000, 0.26);
+@define-color text_insentive alpha(#fff, 0.30);
+@define-color icons_insentive alpha(#fff, 0.30);
+@define-color borders_insentive alpha(#fff, 0.30);
 
 /* misc colors used by gtk+ */
 
