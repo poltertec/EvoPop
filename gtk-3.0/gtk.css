@@ -2,14 +2,14 @@
  * Colors *
  **********/
 
-@define-color bg #f7f7f7;
+@define-color bg #f6f6f6;
 @define-color fg #18344c;
-@define-color base #fff;
+@define-color base #fdfdfd;
 @define-color text #18344c;
 @define-color icons alpha(#18344c, 0.8); /*icons & secondary text*/
 @define-color header #2e3d55;
 @define-color header_fg #e5f4fc;
-@define-color primary #18344c;
+@define-color primary #3b5c78;
 @define-color selected #27b9e5;
 @define-color selected_fg #fff;
 @define-color borders alpha(#18344c, 0.2); /*dividers & borders*/

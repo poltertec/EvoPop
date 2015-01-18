@@ -2,17 +2,17 @@
  * Colors *
  **********/
 
-@define-color bg #3e5272;
+@define-color bg #476f91;
 @define-color fg #f3f6f9;
-@define-color base #637da6;
+@define-color base #5e88ab;
 @define-color text alpha(#f3f6f9, 1.0);
 @define-color icons alpha(#f3f6f9, 1.0); /*icons & secondary text*/
 @define-color header #2e3d55;
 @define-color header_fg #e5f4fc;
-@define-color primary #18344c;
+@define-color primary #3b5c78;
 @define-color selected #27b9e5;
 @define-color selected_fg #fff;
-@define-color borders alpha(#9cb7e0, 0.6); /*dividers & borders*/
+@define-color borders alpha(#3b5c78, 0.6); /*dividers & borders*/
 
 /*insentive & backdrop*/
 

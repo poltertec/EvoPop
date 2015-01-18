@@ -63,7 +63,12 @@ GtkModelButton.button:active:insensitive {
 GtkModelButton.button:active:hover,
 GtkModelButton.button:hover,
 GtkModelButton.button:selected {
-    background-color: @selected;
+    background-color: transparent;
     background-image: none;
-    color: @selected_fg;
+    color: @selected;
+}
+
+GtkPopover .button:hover:prelight GtkImage,
+GtkPopover .button:hover:prelight GtkLabel {
+    color: @selected;
 }

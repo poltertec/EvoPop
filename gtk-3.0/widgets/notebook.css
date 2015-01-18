@@ -58,11 +58,7 @@
 
 .notebook.header.left,
 .notebook tab.left {
-    border-right: 4px solid @primary;
-}
-
-.notebook tab.left:hover {
-    border-right-color: @base;
+    border-right: 4px solid @header;
 }
 
 .notebook tab.left:active {
@@ -71,11 +67,7 @@
 
 .notebook.header.bottom,
 .notebook tab.bottom {
-    border-top: 4px solid @primary;
-}
-
-.notebook tab.bottom:hover {
-    border-top-color: @base;
+    border-top: 4px solid @header;
 }
 
 .notebook tab.bottom:active {
@@ -84,11 +76,7 @@
 
 .notebook.header.right,
 .notebook tab.right {
-    border-left: 4px solid @primary;
-}
-
-.notebook tab.right:hover {
-    border-left-color: @base;
+    border-left: 4px solid @header;
 }
 
 .notebook tab.right:active {
