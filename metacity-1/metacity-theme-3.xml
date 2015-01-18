@@ -10,13 +10,13 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_border_focused" value="blend/#212121/gtk:bg[NORMAL]/0.0" />
-<constant name="C_border_unfocused" value="blend/#212121/gtk:bg[NORMAL]/0.0" />
-<constant name="C_titlebar_focused_hilight" value="blend/#212121/gtk:bg[NORMAL]/0.0" />
-<constant name="C_titlebar_unfocused" value="blend/#212121/gtk:bg[NORMAL]/0.0" />
+<constant name="C_border_focused" value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
+<constant name="C_border_unfocused" value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
+<constant name="C_titlebar_focused_hilight" value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
+<constant name="C_titlebar_unfocused" value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
 <constant name="C_title_focused" value="blend/#fafafa/gtk:bg[NORMAL]/0.0" />
-<constant name="C_title_focused_hilight"  value="blend/#212121/gtk:bg[NORMAL]/0.0" />
-<constant name="C_title_focused_hilight_dark"  value="blend/#212121/gtk:bg[NORMAL]/0.0" />
+<constant name="C_title_focused_hilight"  value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
+<constant name="C_title_focused_hilight_dark"  value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
 <constant name="C_title_unfocused" value="blend/#fafafa/gtk:bg[NORMAL]/0.0" />
 <!-- color of the button icons -->
 <constant name="C_icons_focused" value="blend/#fafafa/gtk:bg[NORMAL]/0.0" />
@@ -174,8 +174,8 @@
 
 <draw_ops name="titlebar_fill_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="blend/#212121/gtk:bg[NORMAL]/0.0" />
-		<color value="blend/#212121/gtk:bg[NORMAL]/0.0" />
+		<color value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
+		<color value="blend/#2e4160/gtk:bg[NORMAL]/0.0" />
 	</gradient>
 </draw_ops>
 
