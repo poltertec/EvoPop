@@ -2,22 +2,9 @@
  * Apps *
  *******/
 
-/*Colors*/
-@define-color header_red #455a64;
-@define-color select_purple #00b0ff;
-@define-color dark_blue #01579B;
-@define-color mid_blue #0288D1;
-@define-color select_blue #00E5FF;
-@define-color dark_teal #00695C;
-@define-color mid_teal #00796B;
-@define-color select_teal #FF4081;
-
 /*Imports*/
 
 @import url("apps/budgie.css");
-@import url("apps/evolve-apps.css");
-@import url("apps/gedit.css");
 @import url("apps/gnome-terminal.css");
 @import url("apps/gnome-tweak-tool.css");
 @import url("apps/nautilus.css");
-@import url("apps/settings.css");

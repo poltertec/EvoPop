@@ -15,7 +15,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="checkbox-unchecked.svg">
+   sodipodi:docname="checkbox-checked.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,10 +30,10 @@
      id="namedview8"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="-7.7892465"
+     inkscape:cx="-19.789246"
      inkscape:cy="8"
-     inkscape:window-x="273"
-     inkscape:window-y="95"
+     inkscape:window-x="606"
+     inkscape:window-y="53"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <metadata
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,7 +52,7 @@
      id="defs14" />
   <path
      inkscape:connector-curvature="0"
-     style="fill:#03a9f4;stroke:#03a9f4;stroke-width:1.80000000000000004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+     style="fill:#27b9e5;stroke:#27b9e5;stroke-width:1.80000000000000004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
      id="path6"
      d="m 15,8 c 0,3.865993 -3.134007,7 -7,7 C 4.1340068,15 1,11.865993 1,8 1,4.1340068 4.1340068,1 8,1 c 3.865993,0 7,3.1340068 7,7 z" />
   <path

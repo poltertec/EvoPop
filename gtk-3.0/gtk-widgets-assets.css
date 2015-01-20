@@ -32,12 +32,6 @@ GtkCheckButton:selected:focus {
 .check:checked:insensitive {
     -gtk-icon-source: url("assets/checkbox-checked-insensitive.svg");
 }
-
-/*Teal checkboxes*/
-CcWindow .check:checked {
-    -gtk-icon-source: url("assets/checkbox-checked-teal.svg");
-}
-
 /*********
  * Radio *
  *********/
@@ -56,11 +50,6 @@ CcWindow .check:checked {
 
 .radio:active:insensitive {
     -gtk-icon-source: url("assets/radio-selected-insensitive.svg");
-}
-
-/*Teal radio's*/ 
-CcWindow .radio:checked {
-    -gtk-icon-source: url("assets/radio-selected-teal.svg");
 }
 
 /**********
@@ -94,14 +83,4 @@ GtkSwitch.slider {
 
 GtkSwitch.slider:active {
     background-image: url("assets/switch-slider-on.svg");
-}
-
-/*Teal Slider*/
-CcWindow GtkSwitch.trough:active {
-    background-image: url("assets/switch-on-teal.svg");
-    background-color: transparent;
-}
-
-CcWindow GtkSwitch.slider:active {
-    background-image: url("assets/switch-slider-on-teal.svg");
 }
