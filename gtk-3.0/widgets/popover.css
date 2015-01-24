@@ -1,24 +1,26 @@
+/************
+ * popovers *
+ ************/
 GtkPopover {
     margin: 10px;
     padding: 2px;
-    background-color: @bg;
+    border-radius: 1px;
+    border-color: shade(@theme_bg_color, 0.8);
+    border-width: 1px;
+    border-style: solid;
     background-clip: border-box;
-    box-shadow: 0 2px 3px alpha(black, 0.5);
-    border: 1px solid alpha(black, 0.12);
-    border-radius: 2px;
-    color: @text;
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+    box-shadow: 0 0 2px alpha(black, 0.75);
 }
 
 GtkPopover.osd {
     box-shadow: 0 2px 7px 3px alpha(black, 0.5);
 }
 
-GtkPopover *:hover {
-    -gtk-image-effect: none;
-}
-
-GtkPopover .separator {
-    color: @borders;
+.popover .button {
+    background-color: transparent;
+    border: none;
 }
 
 GtkPopover > .list,
@@ -32,22 +34,14 @@ GtkPopover.osd > .toolbar .button {
     border-width: 0;
     background-image: none;
     background-color: transparent;
-    color: @icons;
 }
 
-GtkPopover GtkImage {
-    color: @icons;
-}
-
-GtkPopover .button {
+GtkPopover .separator {
+    border: 0;
     background-color: transparent;
-    color: @icons;
-    border: none;
-}
-
-GtkPopover .button:active,
-GtkPopover .button:hover {
-    color: @selected;
+    color: alpha(currentColor, 0.5);
+    font-size: 80%;
+    font-weight: bold;
 }
 
 GtkModelButton.button,
@@ -57,18 +51,17 @@ GtkModelButton.button:active:insensitive {
     background-color: transparent;
     background-image: none;
     box-shadow: none;
-    color: @fg;
+    color: @theme_fg_color;
 }
 
 GtkModelButton.button:active:hover,
 GtkModelButton.button:hover,
 GtkModelButton.button:selected {
-    background-color: transparent;
+    background-color: @theme_selected_bg_color;
     background-image: none;
-    color: @selected;
+    color: @theme_selected_fg_color;
 }
 
-GtkPopover .button:hover:prelight GtkImage,
-GtkPopover .button:hover:prelight GtkLabel {
-    color: @selected;
+GtkPopover *:hover {
+    -gtk-image-effect: none;
 }

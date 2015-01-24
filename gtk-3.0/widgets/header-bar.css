@@ -1,0 +1,27 @@
+.header-bar,
+.header-bar:insensitive {
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: shade(@header, 0.90);
+
+	background-color: @header;
+    padding: 6px 6px;
+}
+
+.header-bar .button.text-button {
+	padding: 6px 6px;
+}
+
+.header-bar .button.image-button {
+	padding: 6px 6px;
+}
+
+.header-bar .title {
+	font: Bold 10;
+    color: @header_fg;
+}
+
+.header-bar .subtitle {
+	font: 9;
+    color: @header_fg;
+}

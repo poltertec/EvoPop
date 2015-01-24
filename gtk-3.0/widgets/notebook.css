@@ -1,13 +1,11 @@
 /************
- * Notebook *
+ * notebook *
  ************/
-
 .notebook {
     padding: 0;
-    background-color: @base;
+    background-color: @theme_base_color;
     background-image: none;
     background-clip: border-box;
-    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
     -GtkNotebook-has-tab-gap: false;
 }
 
@@ -34,7 +32,7 @@
 
 
 .notebook.header {
-    background-color: @primary;
+    background-color: @navigation;
     background-image: none;
     box-shadow: none;
     border-width: 0;
@@ -43,7 +41,7 @@
 .notebook tab {
     padding: 8px;
     box-shadow: none;
-    background-color: @primary;
+    background-color: @navigation;
     background-image: none;
 }
 
@@ -53,7 +51,7 @@
 }
 
 .notebook tab.top:active {
-    border-bottom-color: @selected;
+    border-bottom-color: @theme_selected_fg_color;
 }
 
 .notebook.header.left,
@@ -62,7 +60,7 @@
 }
 
 .notebook tab.left:active {
-    border-right-color: @selected;
+    border-right-color: @theme_selected_fg_color;
 }
 
 .notebook.header.bottom,
@@ -71,7 +69,7 @@
 }
 
 .notebook tab.bottom:active {
-    border-top-color: @selected;
+    border-top-color: @theme_selected_fg_color;
 }
 
 .notebook.header.right,
@@ -80,7 +78,7 @@
 }
 
 .notebook tab.right:active {
-    border-left-color: @selected;
+    border-left-color: @theme_selected_fg_color;
 }
 
 /* close button styling */
@@ -97,22 +95,23 @@
 }
 
 .notebook tab .button {
-    color: @base;
+    color: @theme_base_color;
     background-color: transparent;
 }
 
 .notebook tab .button:hover {
-    color: shade(@base, 0.8);
+    color: shade(@theme_base_color, 0.8);
 }
 
 .notebook tab .button:active,
 .notebook tab .button:checked,
 .notebook tab .button:active:hover,
 .notebook tab .button:checked:hover {
-    color: shade(@base, 0.5);
+    color: shade(@theme_base_color, 0.5);
 }
 
 .notebook tab GtkLabel {
-    color: @selected_fg;
+    color: @header_fg;
     font: Bold;
 }
+

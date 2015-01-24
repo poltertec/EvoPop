@@ -1,4 +1,4 @@
-EvoPop is a modern looking flat theme for Gtk. The theme designed for Budgie desktop.
+EvoPop is a modern looking flat theme for Gtk. The theme designed for Evolve OS. It also includes a GTK 2.0 theme using Murrine engine.
 
 ---
 
@@ -7,7 +7,7 @@ Installation Instructions:
 Extract the zip file to the themes directory i.e. "/usr/share/themes/"
 Alternatively, extract it to the ".themes" directory in your home folder if you want the theme to be applied only to you user.
 
-Use a theme changer such as Gnome Tweak Tool or Budgie settings to change team to EvoPop
+Use Budgie settings to change the theme to EvoPop.
 
 ---
 

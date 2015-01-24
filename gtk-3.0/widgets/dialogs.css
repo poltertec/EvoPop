@@ -1,22 +1,32 @@
 /***********
  * Dialogs *
- ***********/
-
-GtkDialog .titlebar,
-GtkDialog .titlebar:insensitive {
-    background-color: @bg;
-    color: @text;
+ ***********/    
+.message-dialog .titlebar,
+.message-dialog .titlebar:backdrop {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
 }
 
-GtkDialog .titlebar .title {
-    color: @text;
+.message-dialog.csd .dialog-action-area .button {
+    padding: 6px;
+    border-radius: 0;
+    color: @theme_fg_color;
+    background-color: @theme_bg_color;
 }
 
-GtkDialog .titlebar .button {
-    color: @icons;
+.message-dialog.csd .dialog-action-area .button:last-child {
+    border-right: none;
 }
 
-GtkDialog .titlebar .button:hover {
-    transition: 400ms;
-    color: @selected;
+.message-dialog.csd .dialog-action-area .button:hover {
+    color: shade(@theme_selected_fg_color, 1.15);
 }
+
+.message-dialog.csd .dialog-action-area .button:active,
+.message-dialog.csd .dialog-action-area .button:checked,
+.message-dialog.csd .dialog-action-area .button:active:focus,
+.message-dialog.csd .dialog-action-area .button:checked:focus {
+    color: @theme_bg_color;
+    background-color: shade(@theme_selected_fg_color, 1.15);
+}
+

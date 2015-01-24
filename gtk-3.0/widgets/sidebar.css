@@ -1,51 +1,50 @@
-/**********
-* Sidebar *
-***********/
-
+/***********
+ * sidebar *
+ ***********/
 .sidebar,
+.sidebar.view,
 .sidebar .view,
-.sidebar GtkScrolledWindow,
-.source-list,
-.source-list.view {
-    background-color: @primary;
+.sidebar GtkScrolledWindow {
+    background-color: @navigation;
     font-weight: bold;
     color: @header_fg;
 }
-
+.sidebar GtkScrolledWindow,
 .sidebar {
     box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
     padding-top: 6px;
     border-width: 0;
 }
 
-.sidebar .cell {
-    color: @header_fg;
+.sidebar .image:selected,
+.sidebar .image:hover {
+    color: @theme_bg_color;
 }
 
 .sidebar .image:selected:focus,
 .sidebar .image:selected:hover {
-    background-color: @selected;
-    color: @selected_fg;
+    color: @theme_selected_fg_color;
 }
 
 .sidebar .cell:selected,
 .sidebar .cell:selected:focus {
-    background-color: @selected;
-    color: @selected_fg;
+    color: @theme_selected_fg_color;
 }
 
 .sidebar .list-row {
-    background-color: @primary;
+    background-color: @navigation;
     color: @header_fg;
 }
 
 .sidebar .list-row:hover,
 .sidebar .list-row:focus {
-    background-color: @selected;
-    color: @selected_fg;
+    color: @theme_selected_fg_color;
 }
 
-.sidebar .list-row GtkLabel,
-.sidebar .list-row GtkImage {
-    color: @header_fg;
+.sidebar .seperator {
+    color: @navigation;
+}
+
+.sidebar .frame {
+    border-width: 0;
 }
