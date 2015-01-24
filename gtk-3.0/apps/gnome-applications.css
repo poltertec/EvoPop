@@ -399,20 +399,10 @@ UmEditableCombo .button:hover {
     color: @theme_selected_fg_color;
 }
 
-/*Ubuntu Software Center*/
-.label-tile {
-    color: @theme_text_color;
-    background-color: transparent;
-}
-
-.category-tile {
-    color: @theme_text_color;
-    background-color: transparent;
-}
-
-#category-view .button {
-    color: @theme_fg_color;
-    background-color: transparent;
+GvcBalanceBar .frame,
+GvcChannelBar .frame,
+GvcComboBox .frame {
+    border-width: 0px;
 }
 
 /*Gthumb*/
