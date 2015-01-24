@@ -431,21 +431,6 @@ GtkViewport.frame {
     color: @theme_base_color; /*TreeView selected for dconf and sidebars and stuff*/
 }
 
-/***************
- * search bars *
- ***************/
-.search-bar {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-	background-color: shade(@theme_bg_color, 1.05);
-	padding: 6px;
-}
-
-.search-bar .button.close-button {
-    padding: 4px;
-}
-
 /*********************
  * app notifications *
  *********************/

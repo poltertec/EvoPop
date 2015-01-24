@@ -1,0 +1,45 @@
+/***************
+ * search bars *
+ ***************/
+.search-bar.primary-toolbar,
+.search-bar.toolbar,
+.search-bar {
+    padding: 7px;
+    background-color: @navigation;
+    color: @header_fg;
+    border:none;
+    box-shadow: inset 0px 6px 2px -3px rgba(0,0,0,0.2);
+}
+
+.search-bar GtkSearchEntry,
+.search-bar GtkSearchEntry:focus,
+.search-bar.primary-toolbar GtkSearchEntry,
+.search-bar.primary-toolbar GtkSearchEntry:focus {
+    border-radius: 6px;
+    border-color:transparent;
+}
+
+.search-bar .button.close-button {
+    padding: 4px;
+}
+
+.search-bar.toolbar,
+.search-bar {
+    padding: 4px;
+    padding-top: 5px;
+    background-color: @navigation;
+    color: @header_fg;
+    border:none;
+}
+
+.search-bar.toolbar .button {
+    border: none;
+    background: none;
+    color: @header_fg;
+}
+
+.search-bar.toolbar .button:hover,
+.search-bar.toolbar .button:active:hover {
+    color: @selected_fg_color;
+}
+
