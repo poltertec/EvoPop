@@ -32,12 +32,14 @@
 }
 
 .sidebar .list-row {
-    background-color: @navigation;
+    background-color: transparent;
     color: @header_fg;
 }
 
 .sidebar .list-row:hover,
+.sidebar .list-row:hover:active,
 .sidebar .list-row:focus {
+    background-color: transparent;
     color: @theme_selected_fg_color;
 }
 

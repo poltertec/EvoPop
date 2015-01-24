@@ -83,7 +83,7 @@
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: shade(@menubar_fg_color, 1.75);
+    color: shade(@header_fg, 1.75);
     icon-shadow: none;
 }
 

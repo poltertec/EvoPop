@@ -19,3 +19,11 @@ GtkPopover .button:active {
 .budgie-panel *:active {
     background-color: transparent;
 }
+
+.max-budgie-panel  {
+    border-top: 1px solid alpha(black, 0.7);
+}
+
+.budgie-panel .message-area {
+    border-radius: 2px;
+}
