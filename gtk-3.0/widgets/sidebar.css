@@ -8,6 +8,7 @@
     background-color: @navigation;
     font-weight: bold;
     color: @header_fg;
+    
 }
 .sidebar GtkScrolledWindow,
 .sidebar {
@@ -23,12 +24,14 @@
 
 .sidebar .image:selected:focus,
 .sidebar .image:selected:hover {
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
+    background-color: @theme_selected_fg_color;
 }
 
 .sidebar .cell:selected,
 .sidebar .cell:selected:focus {
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
+    background-color: @theme_selected_fg_color;
 }
 .sidebar .list-row { 				/*temp fix for evo-assist*/
     background-color: transparent;
@@ -39,6 +42,17 @@
     background-color: transparent;
     font-weight: bold;
     color: @header_fg;
+}
+
+.sidebar GtkScrolledWindow .list-row:selected, /*for budgie settings*/
+.sidebar GtkScrolledWindow .list-row:selected:hover,
+.sidebar GtkScrolledWindow .list-row:selected:hover:active,
+.sidebar GtkScrolledWindow .list-row:hover,
+.sidebar GtkScrolledWindow .list-row:hover:active {
+    box-shadow: 0px 6px 2px -3px rgba(0,0,0,0.2);
+    background-color: @theme_selected_fg_color;
+    font-weight: bold;
+    color: @theme_base_color;
 }
 
 .sidebar .list-row:hover,
