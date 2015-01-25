@@ -70,10 +70,10 @@ GtkComboBox .menu {
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    border-color: @menu_bg_color;
-    background-color: @menu_bg_color;
+    border-color: @button_bg_color;
+    background-color: @button_bg_color;
     background-image: none;
-    color: shade(@menubar_fg_color, 0.95);
+    color: shade(@theme_base_color, 0.95);
 }
 
 .menubar .menuitem *:hover {

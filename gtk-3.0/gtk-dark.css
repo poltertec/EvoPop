@@ -3,6 +3,11 @@
 @define-color header #2f4261;
 @define-color header_fg #e5f4fc;
 @define-color navigation #1a334c;
+@define-color lime #99ca3c;
+@define-color cyan #6fc7b5;
+@define-color yellow #eedc43;
+@define-color orange #f5a723;
+@define-color purple #9cb7e0;
 
 /* default color scheme */
 @define-color bg_color #1a2230;

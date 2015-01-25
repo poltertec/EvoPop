@@ -3,6 +3,11 @@
 @define-color header #2f4261;
 @define-color header_fg #e5f4fc;
 @define-color navigation #1a334c;
+@define-color lime #99ca3c;
+@define-color cyan #6fc7b5;
+@define-color yellow #eedc43;
+@define-color orange #f5a723;
+@define-color purple #9cb7e0;
 
 /* default color scheme */
 @define-color bg_color #fafafa;
@@ -44,13 +49,13 @@
 @define-color light_grey #dedede;
 
 /* widget colors */
-@define-color button_bg_color #6fc7b5;
+@define-color button_bg_color @cyan;
 @define-color menubar_bg_color @theme_text_color;
 @define-color menubar_fg_color @theme_bg_color;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_text_color;
-@define-color menu_bg_color shade(@theme_text_color, 0.87);
-@define-color menu_fg_color @theme_bg_color;
+@define-color menu_bg_color @theme_base_color;
+@define-color menu_fg_color @theme_text_color;
 @define-color panel_bg_color #222222;
 @define-color panel_fg_color #f2f2f2;
 @define-color menu_selected_fg_color @selected_fg_color;
