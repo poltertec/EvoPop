@@ -30,9 +30,14 @@
 .sidebar .cell:selected:focus {
     color: @theme_selected_fg_color;
 }
-
-.sidebar .list-row {
+.sidebar .list-row { 				/*temp fix for evo-assist*/
     background-color: transparent;
+    font-weight: bold;
+    color: @header;
+}
+.sidebar GtkScrolledWindow .list-row {  	/*scrolled = regular*/
+    background-color: transparent;
+    font-weight: bold;
     color: @header_fg;
 }
 
