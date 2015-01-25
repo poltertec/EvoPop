@@ -158,8 +158,9 @@ NautilusQueryEditor .primary-toolbar.toolbar:only-child {
  * gnome terminal *
  ******************/
 VteTerminal {
-    background-color: @theme_text_color;
+    background-color: @header;
     color: @theme_bg_color;
+
 }
 
 TerminalWindow GtkNotebook.notebook {
