@@ -67,17 +67,17 @@
 
 /* minimize */
 .titlebar .left .titlebutton:nth-child(3),
-.titlebar .right .titlebutton:nth-child(2),
+.titlebar .right .titlebutton:nth-last-child(3),
 .titlebar .left .titlebutton:nth-child(3):active,
-.titlebar .right .titlebutton:nth-child(2):active {
+.titlebar .right .titlebutton:nth-last-child(3):active {
     color: @lime;
 }
 
 /* maximize */
 .titlebar .left .titlebutton:nth-child(2),
-.titlebar .right .titlebutton:nth-child(3),
+.titlebar .right .titlebutton:nth-last-child(2),
 .titlebar .left .titlebutton:nth-child(2):active,
-.titlebar .right .titlebutton:nth-child(3):active {
+.titlebar .right .titlebutton:nth-last-child(2):active {
     color: @lime;
 }
 
